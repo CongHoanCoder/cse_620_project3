@@ -11,7 +11,8 @@
 
 \title{CSE 620: Combinatorial Optimization\\
 \large Simulated Annealing Micro-Project Report}
-\author{Your Name \\ University of Louisville}
+\author{Cong Hoan Nguyen (\texttt{c0nguy10@louisville.edu}) \\ and
+Anesa Hozdic (\texttt{anesa.hozdic@louisville.edu}) \\ University of Louisville}
 \date{\today}
 
 \begin{document}
@@ -222,19 +223,6 @@ it is earned through a sensible choice of $T_0$, $\alpha$ and cooling
 schedule, and that choice, not the algorithm itself, is what determines
 whether the result is a near-optimal tour or a mediocre one.
 
-\section*{Appendix: Reproducibility}
 
-All experiments were run with the code of \texttt{CSE620\_SA\_Project\_Notebook.ipynb}
-unchanged (problem definition, \texttt{Schedule} class,
-\texttt{simulated\_annealing()} and \texttt{hill\_climbing()} implementations),
-driven by the helper script \texttt{experiments.py} in a dedicated Python
-environment (\texttt{.venv}, listed in \texttt{.gitignore}). Cities are drawn
-with \texttt{np.random.default\_rng(254)}, every SA run uses
-\texttt{random\_state=192}, and every reported time is the mean of 10 runs.
-The provided sanity-check entries were reproduced exactly in cost
-($3963.2$ for exponential 2000/0.60 and $2894.4$ for linear 2000/0.60); wall
-clock times differ from the reference machine by roughly 30\% but are
-internally consistent, since all configurations were timed on the same
-machine.
 
 \end{document}
